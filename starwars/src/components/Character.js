@@ -1,14 +1,28 @@
 // Write your Character component here
 
 import React from 'react';
-import { PicNameContainer, PicName } from '../App'
+import styled, { css } from 'styled-components';
+// import { PicNameContainer, PicName } from '../App'
 
+const P = styled.p`
+    font-family: cursive;
+
+    ${props =>
+        props.type === 'name' &&
+        css`
+        font-size: 30px;
+        color: aqua;
+        `
+    }
+
+`;
 
 const Character = (props) => {
     return (
-            <div>
+            <div className='container'>
                 <img src={props.image} alt='Pic of character'/>
-                <p>{props.name}</p>
+                <P type='name'>{props.name}</P>
+                <P>I am from {props.location}</P>
             </div>
         
     )

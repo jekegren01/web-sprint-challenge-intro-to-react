@@ -7,7 +7,6 @@ import styled, { css } from 'styled-components';
 export const PicNameContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   `;
 
   const Title = styled.h1`
@@ -18,10 +17,7 @@ export const PicNameContainer = styled.div`
    text-stroke: 2px black;
  `;
 
-export const PicName = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
+
 
 
 const App = () => {
@@ -56,6 +52,7 @@ const App = () => {
             key={character.id}
             name={character.name}
             image={character.image}
+            location={character.location.name}
           />
         );
       })}
