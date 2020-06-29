@@ -13,6 +13,13 @@ const P = styled.p`
         font-size: 30px;
         color: aqua;
         `
+    }    
+    ${props =>
+        props.type === 'location' &&
+        css`
+        font-size: 18px;
+        color: aquamarine;
+        `
     }
 
 `;
@@ -22,7 +29,7 @@ const Character = (props) => {
             <div className='container'>
                 <img src={props.image} alt='Pic of character'/>
                 <P type='name'>{props.name}</P>
-                <P>I am from {props.location}</P>
+                <P type='location'>I am from {props.location}</P>
             </div>
         
     )
