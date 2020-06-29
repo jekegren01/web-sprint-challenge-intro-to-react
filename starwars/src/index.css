@@ -1,7 +1,7 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
   overflow-x: hidden;
-  background-image: linear-gradient(red, yellow);
+  background-image: linear-gradient(to bottom right,red, green, yellow);
 
   background-color: #56a9ad;
   padding: 0;
