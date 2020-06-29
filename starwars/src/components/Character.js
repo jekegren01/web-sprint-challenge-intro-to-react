@@ -2,7 +2,7 @@
 
 import React from 'react';
 import styled, { css } from 'styled-components';
-// import { PicNameContainer, PicName } from '../App'
+import { Container } from '../App'
 
 const P = styled.p`
     font-family: cursive;
@@ -26,11 +26,11 @@ const P = styled.p`
 
 const Character = (props) => {
     return (
-            <div className='container'>
+            <Container>
                 <img src={props.image} alt='Pic of character'/>
                 <P type='name'>{props.name}</P>
                 <P type='location'>I am from {props.location}</P>
-            </div>
+            </Container>
         
     )
 }

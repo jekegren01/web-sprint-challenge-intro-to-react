@@ -2,12 +2,21 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
 import Character from './components/Character';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const PicNameContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   `;
+
+export const Container = styled.div`
+  margin: 10px auto;
+  padding: 10px;
+  height: 400px;
+  width: 250px;
+  border-radius: 4px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+`;
 
   const Title = styled.h1`
    text-align: center;
